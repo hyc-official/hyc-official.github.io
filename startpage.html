@@ -14,8 +14,16 @@
             <br>
             <div class="search" id="search">
                 <input class="searchbox" id="search-box" type="text" placeholder="使用 百度 搜索">
-                <button class="searchbutton" id="search-button">Go!</button>
+                <button class="searchbutton" id="search-button" onclick="redirect()">Go!</button>
             </div>
+            <p>
+                搜索引擎：
+                <select id="select-engine" onchange="change()">
+                    <option value="baidu" selected>百度</option>
+                    <option value="bing">必应</option>
+                    <option value="fsou">F 搜</option>
+                </select>
+            </p>
             <br><br><br>
             <div class="links" id="links">
                 <a href="https://www.baidu.com" target="_blank" id="link2baidu">
@@ -42,7 +50,7 @@
                         </center>
                     </div>
                 </a>
-                <a href="https://www.fsoufsou.com" target="_blank" id="link2bdtranslate">
+                <a href="https://fsoufsou.com" target="_blank" id="link2bdtranslate">
                     <div class="linkto">
                         <center>
                             <img class="linkto-img" src="https://static.hetaousercontent.com/static/assets/favicon.ico">
@@ -50,7 +58,7 @@
                         </center>
                     </div>
                 </a>
-                <a href="https://www.fsoufsou.com/translate" target="_blank" id="link2bdtranslate">
+                <a href="https://fsoufsou.com/translate" target="_blank" id="link2bdtranslate">
                     <div class="linkto">
                         <center>
                             <img class="linkto-img" src="https://static.hetaousercontent.com/static/assets/favicon.ico">
