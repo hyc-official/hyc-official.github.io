@@ -18,3 +18,7 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+.searchbutton:hover {
+    background-color: #48c89d;
+    border: 3px solid #48c89d;
+}

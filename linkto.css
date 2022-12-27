@@ -8,8 +8,13 @@ a {
 .linkto {
     height: 70px;
     width: 10%;
+    border-radius: 5px;
+    background-color: #ffffff;
     text-align: center;
     float: left;
+}
+.linkto:hover {
+    background-color: #dfdfdf;
 }
 .linkto-img {
     height: 30px;
