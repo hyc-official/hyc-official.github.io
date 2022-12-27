@@ -24,7 +24,7 @@ document.onkeydown = function () {
 
 var setcolor = function (color) {
     document.getElementById("main").style.color = color;
-}
+};
 Chtholly_times = 0;
 var searchtext_change = function () {
     st = document.getElementById("search-box").value;
