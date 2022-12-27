@@ -10,18 +10,19 @@
     <body>
         <div class="over-main" id="over-main"></div>
         <div class="main" id="main">
-            <p><h1>Heyc's Startpage</h1></p>
+            <p><h1 id="main-header">Heyc's Startpage</h1></p>
             <br>
             <div class="search" id="search">
-                <input class="searchbox" id="search-box" type="text" placeholder="使用 百度 搜索">
+                <input class="searchbox" id="search-box" type="text" placeholder="使用 百度 搜索" oninput="searchtext_change()">
                 <button class="searchbutton" id="search-button" onclick="redirect()">Go!</button>
             </div>
             <p>
                 搜索引擎：
-                <select id="select-engine" onchange="change()">
+                <select id="select-engine" onchange="searchengine_change()">
                     <option value="baidu" selected>百度</option>
                     <option value="bing">必应</option>
                     <option value="fsou">F 搜</option>
+                    <option value="moegirls">萌娘百科</option>
                 </select>
             </p>
             <br><br><br>
