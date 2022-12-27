@@ -1,15 +1,20 @@
 urls = ["https://www.baidu.com/s?wd=\"%KeyWord%\"", "https://cn.bing.com/search?q=%KeyWord%", "https://fsoufsou.com/search?q=%KeyWord%", "https://zh.moegirl.org.cn/index.php?title=%KeyWord%", "https://fanyi.baidu.com/#auto/zh/%KeyWord%"];
+homes = ["https://www.baidu.com", "https://cn.bing.com", "https://fsoufsou.com", "https://zh.moegirl.org.cn/Mainpage", "https://fanyi.baidu.com"];
 names = ["百度", "必应", "F 搜", "萌娘百科", "百度翻译"];
-search_url = urls[0];
+index = 0;
 placeholder_template = "使用 %Word% 搜索";
 var searchengine_change = function () {
     index = document.getElementById("select-engine").selectedIndex;
-    search_url = urls[index];
     document.getElementById("search-box").placeholder = placeholder_template.replace(/%Word%/g, names[index]);
 };
 var redirect = function () {
     search_val = document.getElementById("search-box").value;
-    window.open(search_url.replace(/%KeyWord%/g, search_val));
+    if (search_val == "") {
+        window.open(homes[index]);
+    }
+    else {
+        window.open(urls[index].replace(/%KeyWord%/g, search_val));
+    }
 };
 document.onkeydown = function () {
     if (event.keyCode == 13) {
