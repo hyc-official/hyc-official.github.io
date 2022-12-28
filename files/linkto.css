@@ -1,0 +1,22 @@
+a {
+    text-decoration: none;
+    color: #5e72e4;
+}
+.links {
+    display: block;
+}
+.linkto {
+    height: 70px;
+    width: 10%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: center;
+    float: left;
+}
+.linkto:hover {
+    background-color: #e8e8e8;
+}
+.linkto-img {
+    height: 30px;
+    display: block;
+}
