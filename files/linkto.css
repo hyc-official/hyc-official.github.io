@@ -9,7 +9,7 @@ a {
     height: 70px;
     width: 10%;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: inherit;
     text-align: center;
     float: left;
 }

@@ -3,19 +3,27 @@
     <head>
         <meta charset="utf-8">
         <title>Heyc's Startpage</title>
-        <link rel="stylesheet" href="/files/style.css">
+        <link rel="stylesheet" href="/files/startpage.css">
         <link rel="stylesheet" href="/files/search.css">
         <link rel="stylesheet" href="/files/linkto.css">
         <script src="/files/search.js"></script>
+        <script src="/files/cookies.js"></script>
+        <script src="/files/startpage-theme.js"></script>
     </head>
     <body>
-        <div class="over-main" id="over-main"></div>
+        <div class="overmain" id="over-main">
+            <a href="/startpage/settings.html">
+                <div class="clickarea">
+                    <img src="/img/settings.png" height="30px" width="30px" style="margin: 10px">
+                </div>
+            </a>
+        </div>
         <div class="main" id="main">
             <p><h1 id="main-header">Heyc's Startpage</h1></p>
             <br>
             <div class="search" id="search">
-                <input class="searchbox" id="search-box" type="text" placeholder="使用 百度 搜索" oninput="searchtext_change()">
-                <button class="searchbutton" id="search-button" onclick="redirect()">Go!</button>
+                <input class="searchbox" id="search-box" type="text" oninput="searchtext_change()">
+                <button class="searchbutton" id="search-button" onclick="redirect()"><b>Go!</b></button>
                 <p>
                     搜索引擎：
                     <select id="select-engine" onchange="searchengine_change()">
@@ -111,8 +119,12 @@
                 </a>
             </div>
         </div>
+        <script type="text/javascript">
+            updengine();
+            updtheme();
+        </script>
         <link rel="stylesheet" type="text/css" href="/live2d/waifu.css">
-        <div class="waifu" id="waifu" style="z-index: 99999999;">
+        <div class="waifu" id="waifu" style="z-index: -1;">
             <div class="waifu-tips"></div>
             <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
         </div>
