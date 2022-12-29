@@ -16,8 +16,8 @@ var updengine = function () {
     engine = read_cookie("DefaultEngine");
     if (engine != null) {
         document.getElementById("select-engine").selectedIndex = engine;
-        searchengine_change();
     }
+    searchengine_change();
 }
 var updtheme = function () {
     if (read_cookie("DarkMode") == "1") {
