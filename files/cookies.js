@@ -2,7 +2,7 @@ var set_cookie = function (name, value) {
     for (i = 0; i < (name.length < value.length ? name.length : value.length); i++) {
         document.cookie = name[i] + "=" + value[i] + ";";
     }
-}
+};
 var read_cookie = function (name) {
     cookies = document.cookie.split("; ");
     for (i = 0; i < cookies.length; i++) {
@@ -12,4 +12,4 @@ var read_cookie = function (name) {
         }
     }
     return null;
-}
+};
