@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="/files/linkto.css">
         <script src="/files/search.js"></script>
         <script src="/files/cookies.js"></script>
-        <script src="/files/startpage-theme.js"></script>
+        <script src="/files/startpage-settings.js"></script>
+        <script src="/files/startpage-customize.js"></script>
     </head>
     <body>
         <div class="overmain" id="over-main">
@@ -36,92 +37,13 @@
                 </p>
             </div>
             <br><br><br>
-            <div class="links" id="links">
-                <a href="https://www.baidu.com" target="_blank" id="link2baidu">
-                    <div class="linkto">
-                        <center>
-                            <img class="linkto-img" src="https://www.baidu.com/favicon.ico">
-                            <p>百度搜索</p>
-                        </center>
-                    </div>
-                </a>
-                <a href="https://fanyi.baidu.com" target="_blank" id="link2bdtranslate">
-                    <div class="linkto">
-                        <center>
-                            <img class="linkto-img" src="https://fanyi.baidu.com/favicon.ico">
-                            <p>百度翻译</p>
-                        </center>
-                    </div>
-                </a>
-                <a href="https://cn.bing.com" target="_blank" id="link2bing">
-                    <div class="linkto">
-                        <center>
-                            <img class="linkto-img" src="https://cn.bing.com/favicon.ico">
-                            <p>必应 / Bing</p>
-                        </center>
-                    </div>
-                </a>
-                <a href="https://fsoufsou.com" target="_blank" id="link2fsou">
-                    <div class="linkto">
-                        <center>
-                            <img class="linkto-img" src="https://static.hetaousercontent.com/static/assets/favicon.ico">
-                            <p>F 搜</p>
-                        </center>
-                    </div>
-                </a>
-                <a href="https://www.luogu.com.cn" target="_blank" id="link2luogu">
-                    <div class="linkto">
-                        <center>
-                            <img class="linkto-img" src="https://www.luogu.com.cn/favicon.ico">
-                            <p>洛谷</p>
-                        </center>
-                    </div>
-                </a>
-                <a href="https://lgbbs.oiso.cf" target="_blank" id="link2lgbbs">
-                    <div class="linkto">
-                        <center>
-                            <img class="linkto-img" src="https://www.luogu.com.cn/favicon.ico">
-                            <p>洛谷帖子保存站</p>
-                        </center>
-                    </div>
-                </a>
-                <a href="https://hydro.ac" target="_blank" id="link2hydro">
-                    <div class="linkto">
-                        <center>
-                            <img class="linkto-img" src="https://hydro.ac/favicon.ico">
-                            <p>Hydro</p>
-                        </center>
-                    </div>
-                </a>
-                <a href="https://codeforces.com" target="_blank" id="link2codeforces">
-                    <div class="linkto">
-                        <center>
-                            <img class="linkto-img" src="https://codeforces.com/favicon.ico">
-                            <p>Codeforces</p>
-                        </center>
-                    </div>
-                </a>
-                <a href="https://atcoder.jp" target="_blank" id="link2atcoder">
-                    <div class="linkto">
-                        <center>
-                            <img class="linkto-img" src="https://atcoder.jp/favicon.ico">
-                            <p>AtCoder</p>
-                        </center>
-                    </div>
-                </a>
-                <a href="https://vjudge.net" target="_blank" id="link2vjudge">
-                    <div class="linkto">
-                        <center>
-                            <img class="linkto-img" src="https://vjudge.net/favicon.ico">
-                            <p>Virtual Judge</p>
-                        </center>
-                    </div>
-                </a>
-            </div>
+            <div class="links" id="links"></div>
         </div>
         <script type="text/javascript">
-            updengine();
-            updtheme();
+            engine_upd();
+            theme_upd();
+            links_read();
+            links_load_display();
         </script>
         <link rel="stylesheet" type="text/css" href="/live2d/waifu.css">
         <div class="waifu" id="waifu" style="z-index: -1;">
