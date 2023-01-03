@@ -1,8 +1,8 @@
-urls = ["https://www.baidu.com/s?wd=\"%KeyWord%\"", "https://cn.bing.com/search?q=%KeyWord%", "https://fsoufsou.com/search?q=%KeyWord%", "https://zh.moegirl.org.cn/index.php?title=%KeyWord%", "https://fanyi.baidu.com/#auto/zh/%KeyWord%"];
-homes = ["https://www.baidu.com", "https://cn.bing.com", "https://fsoufsou.com", "https://zh.moegirl.org.cn/Mainpage", "https://fanyi.baidu.com"];
-names = ["百度", "必应", "F 搜", "萌娘百科", "百度翻译"];
-index = 0;
-placeholder_template = "使用 %Word% 搜索";
+var urls = ["https://www.baidu.com/s?wd=\"%KeyWord%\"", "https://cn.bing.com/search?q=%KeyWord%", "https://fsoufsou.com/search?q=%KeyWord%", "https://zh.moegirl.org.cn/index.php?title=%KeyWord%", "https://fanyi.baidu.com/#auto/zh/%KeyWord%"];
+var homes = ["https://www.baidu.com", "https://cn.bing.com", "https://fsoufsou.com", "https://zh.moegirl.org.cn/Mainpage", "https://fanyi.baidu.com"];
+var names = ["百度", "必应", "F 搜", "萌娘百科", "百度翻译"];
+var index = 0;
+var placeholder_template = "使用 %Word% 搜索";
 var searchengine_change = function () {
     index = document.getElementById("select-engine").selectedIndex;
     document.getElementById("search-box").placeholder = placeholder_template.replace(/%Word%/g, names[index]);
@@ -25,7 +25,7 @@ document.onkeydown = function () {
 var setcolor = function (color) {
     document.getElementById("main").style.color = color;
 };
-Chtholly_times = 0;
+var Chtholly_times = 0;
 var searchtext_change = function () {
     st = document.getElementById("search-box").value;
     if (st == "珂朵莉" || st == "Chtholly") {

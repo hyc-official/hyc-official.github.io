@@ -1,11 +1,11 @@
 var set_cookie = function (name, value) {
-    for (i = 0; i < (name.length < value.length ? name.length : value.length); i++) {
+    for (var i = 0; i < (name.length < value.length ? name.length : value.length); i++) {
         document.cookie = name[i] + "=" + value[i] + ";";
     }
 };
 var read_cookie = function (name) {
     cookies = document.cookie.split("; ");
-    for (i = 0; i < cookies.length; i++) {
+    for (var i = 0; i < cookies.length; i++) {
         tmp = cookies[i].split("=");
         if (tmp[0] == name) {
             return tmp[1];
