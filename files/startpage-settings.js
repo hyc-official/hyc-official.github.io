@@ -1,6 +1,7 @@
 var settings_save = function () {
     names = ["DarkMode", "DefaultEngine"], values = [document.getElementsByName("darkmode")[0].checked ? "1" : "0", document.getElementById("default-engine").selectedIndex.toString()];
     set_cookie(names, values);
+    title_save();
     links_save();
     window.alert("设置已保存");
     location.reload();

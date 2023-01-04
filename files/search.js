@@ -30,7 +30,6 @@ var searchtext_change = function () {
     st = document.getElementById("search-box").value;
     if (st == "珂朵莉" || st == "Chtholly") {
         setcolor("#55c8fb");
-        document.getElementById("main-header").innerHTML = "Chtholly is so cute!";
         Chtholly_times++;
         console.log("User input Chtholly for %d time(s)", Chtholly_times);
         if (Chtholly_times >= 68) {
@@ -40,6 +39,5 @@ var searchtext_change = function () {
     }
     else {
         setcolor("#68e8bd");
-        document.getElementById("main-header").innerHTML = "Heyc's Startpage";
     }
 };

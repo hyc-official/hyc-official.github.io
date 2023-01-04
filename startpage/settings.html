@@ -39,6 +39,7 @@
                                 <option value="bdtranslate">百度翻译</option>
                             </select>
                         </p>
+                        <p>自定义标题：<input type="text" id="title" placeholder="Heyc's Startpage"></p>
                     </div>
                 </div>
                 <br>
@@ -70,6 +71,8 @@
             settings_load();
             links_read();
             links_load_settings();
+            title_read();
+            title_load_settings();
         </script>
     </body>
 </html>

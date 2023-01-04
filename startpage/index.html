@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Heyc's Startpage</title>
+        <title id="page-header">Heyc's Startpage</title>
         <link rel="stylesheet" href="/files/startpage.css">
         <link rel="stylesheet" href="/files/search.css">
         <link rel="stylesheet" href="/files/linkto.css">
@@ -44,6 +44,8 @@
             theme_upd();
             links_read();
             links_load_display();
+            title_read();
+            title_load_display();
         </script>
         <link rel="stylesheet" type="text/css" href="/live2d/waifu.css">
         <div class="waifu" id="waifu" style="z-index: -1;">
