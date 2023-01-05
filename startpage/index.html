@@ -14,8 +14,8 @@
     <body>
         <div class="overmain" id="over-main">
             <a href="/startpage/settings.html">
-                <div class="clickarea">
-                    <img src="/img/settings.png" height="30px" width="30px" style="margin: 10px">
+                <div class="clickarea-light" id="click">
+                    <img src="/img/settings-black.png" id="click-icon" height="30px" width="30px" style="margin: 10px">
                 </div>
             </a>
         </div>
@@ -41,11 +41,11 @@
         </div>
         <script type="text/javascript">
             engine_upd();
-            theme_upd();
             links_read();
             links_load_display();
             title_read();
             title_load_display();
+            theme_upd_display();
         </script>
         <link rel="stylesheet" type="text/css" href="/live2d/waifu.css">
         <div class="waifu" id="waifu" style="z-index: -1;">

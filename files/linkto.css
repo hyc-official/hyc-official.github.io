@@ -5,7 +5,7 @@ a {
 .links {
     display: block;
 }
-.linkto {
+.linkto-light {
     height: 70px;
     width: 10%;
     border-radius: 5px;
@@ -13,10 +13,22 @@ a {
     text-align: center;
     float: left;
 }
-.linkto:hover {
+.linkto-light:hover {
     background-color: #e8e8e8;
+}
+.linkto-dark {
+    height: 70px;
+    width: 10%;
+    border-radius: 5px;
+    background-color: inherit;
+    text-align: center;
+    float: left;
+}
+.linkto-dark:hover {
+    background-color: #606060;
 }
 .linkto-img {
     height: 30px;
     display: block;
+    border-radius: 3px;
 }

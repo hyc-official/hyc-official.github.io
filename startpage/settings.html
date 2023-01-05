@@ -11,8 +11,8 @@
     </head>
     <body>
         <a href="/startpage/index.html">
-            <div class="clickarea">
-                <img src="/img/cross.png" height="30px" width="30px" style="margin: 10px">
+            <div class="clickarea-light" id="click">
+                <img src="/img/cross-black.png" id="click-icon" height="30px" width="30px" style="margin: 10px">
             </div>
         </a>
         <div class="main2" id="main2">
@@ -66,13 +66,12 @@
             <br>
         </div>
         <script type="text/javascript">
-            theme_upd();
-            texttheme_upd();
             settings_load();
             links_read();
             links_load_settings();
             title_read();
             title_load_settings();
+            theme_upd_settings();
         </script>
     </body>
 </html>

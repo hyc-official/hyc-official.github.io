@@ -16,14 +16,22 @@ var engine_upd = function () {
     }
     searchengine_change();
 };
-var theme_upd = function () {
+var theme_upd_display = function () {
     if (read_cookie("DarkMode") == "1") {
-        document.body.style.backgroundColor = "#35363a";
+        document.body.className = "body-dark";
+        for (var i = 0; document.getElementById("lnk" + i) != null; i++) {
+            document.getElementById("lnk" + i).className = "linkto-dark";
+        }
+        document.getElementById("click").className = "clickarea-dark";
+        document.getElementById("click-icon").src = "/img/settings-white.png";
     }
 };
-var texttheme_upd = function () {
+var theme_upd_settings = function () {
     if (read_cookie("DarkMode") == "1") {
+        document.body.className = "body-dark";
         document.getElementById("main2").style.color = "#ffffff";
+        document.getElementById("click").className = "clickarea-dark";
+        document.getElementById("click-icon").src = "/img/cross-white.png";
     }
 };
 var settings_load = function () {

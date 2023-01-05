@@ -1,3 +1,9 @@
+.body-light {
+    background-color: #ffffff;
+}
+.body-dark {
+    background-color: #35363a;
+}
 .overmain {
     height: 75px;
 }
@@ -5,7 +11,7 @@
     text-align: center;
     color: #68e8bd;
 }
-.clickarea {
+.clickarea-light {
     text-align: center;
     height: 50px;
     width: 50px;
@@ -15,8 +21,21 @@
     top: 10px;
     right: 10px;
 }
-.clickarea:hover {
+.clickarea-light:hover {
     background-color: #e8e8e8;
+}
+.clickarea-dark {
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: inherit;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.clickarea-dark:hover {
+    background-color: #606060;
 }
 button {
     color: #ffffff;

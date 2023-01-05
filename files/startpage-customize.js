@@ -33,7 +33,7 @@ var links_read = function () {
 var links_load_display = function () {
     document.getElementById("links").innerHTML = "";
     for (var i = 0; i < links.length; i++) {
-        document.getElementById("links").innerHTML += "<a href=\"" + links[i][1] + "\" target=\"_blank\"><div class=\"linkto\" id=\"lnk" + i + "\"><center><img class=\"linkto-img\" src=\"" + links[i][2] + "\"><p>" + links[i][0] + "</p></center></div></a>\n";
+        document.getElementById("links").innerHTML += "<a href=\"" + links[i][1] + "\" target=\"_blank\"><div class=\"linkto-light\" id=\"lnk" + i + "\"><center><img class=\"linkto-img\" src=\"" + links[i][2] + "\"><p>" + links[i][0] + "</p></center></div></a>\n";
     }
     if (links.length % 10 != 0) {
         document.getElementById("lnk" + (Math.floor(links.length / 10) * 10)).style.marginLeft = ((10 - links.length % 10) * 5) + "%";
